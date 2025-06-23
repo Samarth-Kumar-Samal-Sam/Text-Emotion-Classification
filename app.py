@@ -5,7 +5,7 @@ import pandas as pd
 import joblib
 
 # Load the model
-model = joblib.load(r'Model\Text-Model.joblib')
+model = joblib.load(r'Model/Text-Model.joblib')
 
 # Predicting the emotion
 def predict_emotions(docx):
