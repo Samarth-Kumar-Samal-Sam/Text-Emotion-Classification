@@ -7,4 +7,3 @@ streamlit
 altair
 joblib
 ipykernel
-jupyter notebook
