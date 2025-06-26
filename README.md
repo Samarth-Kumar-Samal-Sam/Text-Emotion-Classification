@@ -1,117 +1,64 @@
 ---
 
-# 😃 Text-Emotion-Classification using Natural Language Processing
+# 😃 Text Emotion Classification Web Application
 
-![Emotion NLP](./Assets/Text.jpg)
+### 🚀 **Live Demo**
 
-# 🚀 Live Application
-
-🔗 **[Access the Web Application](https://sam-text-emotion.streamlit.app/)** — Try it live to see emotion predictions from your own text inputs in real-time.
+🔗 [Try the Application Here](https://sam-text-emotion.streamlit.app/) — **Experience real-time emotion detection powered by NLP and machine learning!**
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
-The **Text-Emotion-Classification** project is an interactive machine learning application designed to detect emotions from written text using **Natural Language Processing (NLP)** techniques. It leverages a trained model to classify user input into categories such as *joy*, *anger*, *fear*, *sadness*, and more.
+Understand how people feel just from their words using this smart **Text Emotion Classification** app! Built with Natural Language Processing (NLP) techniques, this tool classifies emotions like *joy*, *anger*, *fear*, and more from user-provided text.
 
-Developed using **Python**, the backend is powered by **Scikit-learn** and **NLTK**, and the frontend is rendered using **Streamlit**, offering a clean and responsive UI.
-
-This tool can be used in:
-
-* Social media sentiment analysis
-* Chatbots and customer support automation
-* Mental health monitoring
-* Academic research on language and emotions
+Developed using **Streamlit** for an intuitive interface, it allows users to input any sentence and get instant emotion predictions using a pre-trained machine learning model. Whether you're analyzing tweets, enhancing chatbots, or conducting sentiment research, this app is built for you!
 
 ---
 
-# 🛠️ Tech Stack & Tools Used
+## 🛠️ Tech Stack & Tools
 
-| Category      | Tools & Libraries           |
-| ------------- | --------------------------- |
-| Language      | Python 3.8+                 |
-| UI Framework  | Streamlit                   |
-| ML Libraries  | Scikit-learn, Joblib        |
-| NLP Tools     | NLTK                 |
-| Data Analysis | Pandas, NumPy               |
-| Visualization | Matplotlib, Seaborn, Altair |
-| Environment   | venv (Virtual Environment)  |
-| IDE           | VS Code (Recommended)       |
-
----
-
-# 📦 Features
-
-✅ Emotion classification using ML model trained on labeled text  
-✅ Easy-to-use input field for real-time emotion prediction  
-✅ Dynamic visualization of emotion label distributions  
-✅ Organized notebooks for training and testing models  
-✅ Modular architecture (separate folders for model, datasets, notebooks)  
-✅ Ready for deployment on **Streamlit Cloud**, **Heroku**, or **Docker**  
+| Technology              | Purpose                                 |
+| ----------------------- | --------------------------------------- |
+| 🐍 Python 3.8+          | Core programming language               |
+| 🚀 Streamlit            | Interactive web interface               |
+| 🧠 Scikit-learn         | Machine learning model development      |
+| 🗣️ NLTK                | Text preprocessing and NLP operations   |
+| 📦 Joblib               | Model serialization and loading         |
+| 📊 Matplotlib & Seaborn | Data visualization and analysis         |
+| 📈 Altair               | Interactive charting                    |
+| 🐼 Pandas & NumPy       | Data processing and numerical computing |
 
 ---
 
-# 📁 File Structure
+## ✨ Key Features
 
-```
-.
-├── Dataset/
-│   ├── Emotion Dataset.csv          # Raw labeled emotion dataset
-│   ├── training_dataset.csv         # Preprocessed training set
-│   └── testing_dataset.csv          # Preprocessed testing set
-│
-├── Model/
-│   └── Text-Model.joblib            # Trained classifier model
-│
-├── Notebooks/
-│   ├── Training Notebook.ipynb      # Model training workflow
-│   └── Testing Notebook.ipynb       # Model evaluation
-│
-├── Assets/
-│   └── Text.jpg                          # Additional image resource
-│
-├── app.py                           # Streamlit app
-├── requirements.txt                 # Python dependencies
-├── .gitignore                       # Ignored files/folders
-├── LICENSE                          # MIT License
-└── README.md                        # Project documentation
-
-```
+* 📝 **Real-Time Emotion Detection**: Classify user input text into emotions instantly
+* 🎨 **Dynamic Visualizations**: See emotion distribution through interactive charts
+* 🔍 **Multi-Emotion Support**: Classifies text into categories like Joy, Sadness, Anger, and more
+* 📂 **Structured Workflow**: Modular design with separate folders for models, datasets, and notebooks
+* 📥 **Trained Model Integration**: Easily extend or replace the model using the training notebook
+* 📱 **Responsive Design**: Works across desktop, tablet, and mobile screens
 
 ---
 
-# 📊 Emotion Categories
+## ⚙️ Setup Instructions (Local Development)
 
-Depending on the dataset, the model may classify text into one or more of the following emotions:
-
-* 😄 Joy
-* 😡 Anger
-* 😢 Sadness
-* 😨 Fear
-* 😲 Surprise
-* 😐 Neutral
-* 😍 Love
-
----
-
-# ⚙️ Local Setup Instructions
-
-Follow these steps to run the project locally:
-
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Samarth-Kumar-Samal/Emotion-Text-Classification-using-NLP.git
+
 cd Emotion-Text-Classification-using-NLP
 ```
 
-## 2. Create a Python Virtual Environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-## 3. Activate the Environment
+### 3. Activate the Environment
 
 * **Windows:**
 
@@ -119,106 +66,144 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-* **Linux/Mac:**
+* **Linux/macOS:**
 
 ```bash
 source venv/bin/activate
 ```
 
-## 4. Install Required Packages
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 5. Run the Application
+### 5. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-Streamlit will launch your default browser with the app running locally.
+---
+
+## 📁 Repository Structure
+
+```plaintext
+.
+├── Assets/
+│   └── Text.jpg                     # Image used in the web app
+├── Dataset/
+│   ├── Emotion Dataset.csv          # Raw labeled data
+│   ├── training_dataset.csv         # Cleaned training data
+│   └── testing_dataset.csv          # Cleaned testing data
+├── Model/
+│   └── Text-Model.joblib            # Trained model file
+├── Notebooks/
+│   ├── Training Notebook.ipynb      # Model training workflow
+│   └── Testing Notebook.ipynb       # Model evaluation and analysis
+├── .gitignore                       # Git ignore file
+├── LICENSE                          # License file
+├── README.md                        # Project documentation
+├── app.py                           # Streamlit application
+└── requirements.txt                 # Python dependencies
+```
 
 ---
 
-# 🧪 Model Training & Evaluation
+## 🚀 Usage Instructions
 
-* Use `Training Notebook.ipynb` to:
-
-  * Load and preprocess text data
-  * Tokenize and vectorize using `CountVectorizer` or `TfidfVectorizer`
-  * Train a classifier (e.g., Logistic Regression, SVM)
-  * Save the trained model using `joblib`
-
-* Use `Testing Notebook.ipynb` to:
-
-  * Load the trained model
-  * Evaluate accuracy, precision, recall, F1-score
-  * Visualize confusion matrix and classification report
+1. Launch the app via Streamlit.
+2. Enter a sentence or paragraph into the input field.
+3. Click **Predict Emotion** to get the classified emotion label.
+4. Explore the **emotion distribution** chart for visual context.
+5. Optionally, inspect and retrain the model using the included notebooks.
 
 ---
 
-# 🧰 Deployment (Optional)
+## 🧪 Model Training & Evaluation
 
-To deploy the app online:
+Use the provided notebooks to build or refine the ML model:
 
-## Using Streamlit Cloud:
+* **Training Notebook.ipynb**:
 
-* Push code to a public GitHub repo
-* Go to [Streamlit Cloud](https://streamlit.io/cloud)
-* Connect the repo and deploy — it's free and easy!
+  * Text preprocessing with NLTK
+  * Vectorization using `CountVectorizer` or `TfidfVectorizer`
+  * Train a classifier like Logistic Regression or SVM
+  * Export model using `joblib`
 
-## Using Docker:
+* **Testing Notebook.ipynb**:
 
-* Build the image:
-
-  ```bash
-  docker build -t emotion-nlp-app .
-  ```
-* Run the container:
-
-  ```bash
-  docker run -p 8501:8501 emotion-nlp-app
-  ```
+  * Load and test model performance
+  * Visualize confusion matrix
+  * Generate classification report (accuracy, precision, recall, F1-score)
 
 ---
 
-# 🙌 Contributing
+## 📊 Emotion Categories
 
-We welcome contributions!
+The classifier currently detects the following emotions:
 
-1. Fork this repository
-2. Create your branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m "Add feature"`
-4. Push to the branch: `git push origin feature-name`
-5. Open a pull request 🚀
-
----
-
-# 📜 License
-
-Licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+* 😄 **Joy**
+* 😡 **Anger**
+* 😢 **Sadness**
+* 😨 **Fear**
+* 😲 **Surprise**
+* 😐 **Neutral**
+* 😍 **Love**
 
 ---
 
-# 👤 Author
+## 👨‍💻 Contributing
+
+We welcome your contributions! Follow these steps:
+
+1. Fork the repository
+
+2. Create a feature branch:
+
+   ```bash
+   git checkout -b feature-name
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m "Add feature description"
+   ```
+
+4. Push to your branch:
+
+   ```bash
+   git push origin feature-name
+   ```
+
+5. Submit a Pull Request 🚀
+
+---
+
+## 📜 License
+
+This project is licensed under the **[MIT License](LICENSE)**.
+
+---
+
+## 👤 Author
 
 **Samarth Kumar Samal**
-🔗 [GitHub Profile](https://github.com/Samarth-Kumar-Samal)
+🔗 [GitHub Profile](https://github.com/Samarth-Kumar-Samal-Sam)
 
 ---
 
-# 🙏 Acknowledgements
+## 🙏 Acknowledgements
 
-A big thanks to the open-source libraries and tools that made this possible:
+Special thanks to these powerful libraries and tools:
 
-* [NumPy](https://numpy.org/)
-* [Pandas](https://pandas.pydata.org/)
-* [Matplotlib](https://matplotlib.org/)
-* [Seaborn](https://seaborn.pydata.org/)
 * [Scikit-learn](https://scikit-learn.org/)
 * [NLTK](https://www.nltk.org/)
-* [Streamlit](https://streamlit.io/)
+* [Pandas](https://pandas.pydata.org/)
+* [NumPy](https://numpy.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
 * [Altair](https://altair-viz.github.io/)
-
+* [Streamlit](https://streamlit.io/)
 ---
