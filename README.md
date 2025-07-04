@@ -49,7 +49,7 @@ Developed using **Streamlit** for an intuitive interface, it allows users to inp
 ```bash
 git clone https://github.com/Samarth-Kumar-Samal-Sam/Text-Emotion-Classification.git
 
-cd Emotion-Text-Classification-using-NLP
+cd Emotion-Text-Classification
 ```
 
 ### 2. Create a Virtual Environment
