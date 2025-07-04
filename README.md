@@ -47,7 +47,7 @@ Developed using **Streamlit** for an intuitive interface, it allows users to inp
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Samarth-Kumar-Samal/Emotion-Text-Classification-using-NLP.git
+git clone https://github.com/Samarth-Kumar-Samal-Sam/Text-Emotion-Classification.git
 
 cd Emotion-Text-Classification-using-NLP
 ```
